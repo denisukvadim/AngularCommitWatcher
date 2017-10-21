@@ -1,0 +1,27 @@
+/* app css stylesheet */
+
+html body {
+  background-color: #9c9897;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.commits-block {
+  background-color: #fff;
+  border-radius: 3px;
+  border: solid 1px #000;
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px;
+  overflow: auto;
+}
+.inline-block {
+  display: inline;
+  float: left;
+  margin: 5px;
+  max-width: 33%;
+}
+.inline-block p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

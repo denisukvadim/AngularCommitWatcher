@@ -1,0 +1,25 @@
+<header>
+    <div class="container">
+        <div class="page-header">
+            <h2>Recent 25 commits</h2>
+            <button class="btn btn-default btn-sm" ng-click="home.refreshCommits()">
+                Refresh
+            </button>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="commits-block" ng-repeat="commit in home.commits">
+                <div class="inline-block">
+                    <img ng-src="{{commit.author.avatar_url}}" width="50" class="img-responsive">
+                </div>
+                <div class="inline-block">
+                    <p><b>{{commit.commit.message}}</b></p>
+                    <p>{{commit.author.login}}: {{commit.commit.committer.date | timeAgo}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
