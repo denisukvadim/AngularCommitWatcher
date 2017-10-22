@@ -1,10 +1,5 @@
 /* app css stylesheet */
 
-html body {
-  background-color: #9c9897;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-}
 .commits-block {
   background-color: #fff;
   border-radius: 3px;
@@ -17,11 +12,46 @@ html body {
 .inline-block {
   display: inline;
   float: left;
-  margin: 5px;
-  max-width: 33%;
 }
-.inline-block p{
+.inline-block img {
+  margin: 5px;
+}
+.inline-block p {
+  margin: 5px;
+}
+.commit-text {
+  width: calc(100% - (50px + 10px));
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.commit-name {
+  font-size: 1em;
+  max-width: 90%;
+}
+.commit-text-bot {
+  overflow: auto;
+  font-size: 0.8em;
+}
+.button-parent {
+  width: fit-content;
+  border: solid 2px #666666;
+  border-radius: 12px;
+}
+.border-button {
+  background: #bfbfbf;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 12px;
+  border: solid 2px #ffffff;
+}
+.border-button button
+{
+  border-radius: 10px;
+  border: solid 1px #707070;
+  background: linear-gradient(to top, #b1b1b1, #e2e2e2);
+  box-shadow: #bfbfbf 1px 0px 5px;
+}
+.border-button button span {
+  color: #888888;
 }

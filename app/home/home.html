@@ -2,22 +2,33 @@
     <div class="container">
         <div class="page-header">
             <h2>Recent 25 commits</h2>
-            <button class="btn btn-default btn-sm" ng-click="home.refreshCommits()">
-                Refresh
-            </button>
+            <div class="button-parent">
+                <div class="border-button">
+                    <button class="btn btn-lg" ng-click="home.refreshCommits()">
+                        <span>&starf;</span><b> REFRESH </b><span>&starf;</span>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </header>
 <div class="container">
     <div class="row">
-        <div class="col-md-10">
-            <div class="commits-block" ng-repeat="commit in home.commits">
+        <div class="col-md-12">
+            <div class="commits-block" ng-repeat="commit in home.commits | orderBy: 'author.login'">
                 <div class="inline-block">
                     <img ng-src="{{commit.author.avatar_url}}" width="50" class="img-responsive">
                 </div>
-                <div class="inline-block">
-                    <p><b>{{commit.commit.message}}</b></p>
-                    <p>{{commit.author.login}}: {{commit.commit.committer.date | timeAgo}}</p>
+                <div class="inline-block commit-text">
+                    <p class="commit-text commit-name"><b>{{commit.commit.message}}</b></p>
+                    <div class="commit-text-bot">
+                        <div class="inline-block">
+                            <p><b>{{commit.author.login}}:</b> committed {{commit.commit.committer.date | timeAgo}}</p>
+                        </div>
+                        <div class="inline-block pull-right">
+                            <p>commit: {{commit.sha}} </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
