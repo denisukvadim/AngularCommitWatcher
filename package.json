@@ -1,9 +1,12 @@
 {
-  "name": "angular-seed",
+  "name": "commit-watch",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denisukvadim/AngularCommitWatcher.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.7.7",
@@ -33,5 +36,11 @@
   },
   "dependencies": {
     "bower": "^1.8.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/angular/angular-seed/issues"
+  },
+  "homepage": "https://github.com/angular/angular-seed#readme",
+  "main": "index.js",
+  "author": "Denisuk Vadim"
 }
