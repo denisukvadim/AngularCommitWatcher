@@ -2,7 +2,7 @@
 
 // Declare app level module which depends on views, and components
 angular
-    .module('GitHubWatcher', ['ngRoute', 'yaru22.angular-timeago'])
+    .module('HeaderSearch', ['ngRoute', 'yaru22.angular-timeago'])
     .config(config);
 
 function config($locationProvider, $routeProvider) {
@@ -11,8 +11,8 @@ function config($locationProvider, $routeProvider) {
     $routeProvider.otherwise({redirectTo: '/'});
     $routeProvider
         .when('/', {
-            templateUrl: 'home/home.html',
-            controller: 'HomeCtrl',
-            controllerAs: 'home'
+            templateUrl: 'header/header.html',
+            controller: 'HeaderCtr',
+            controllerAs: 'header'
         });
 }

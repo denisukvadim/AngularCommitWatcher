@@ -1,57 +1,70 @@
 /* app css stylesheet */
 
-.commits-block {
-  background-color: #fff;
-  border-radius: 3px;
-  border: solid 1px #d0d0d0;
-  width: 100%;
-  margin: 10px 0;
-  padding: 5px;
-  overflow: auto;
+/*work watelo*/
+header {
+  background: #3f459b;
 }
-.inline-block {
-  display: inline;
-  float: left;
+#imaginary_container{
+  margin: 5px 0; /* Don't copy this */
 }
-.inline-block img {
-  margin: 5px;
+#imaginary_container input {
+  background: #23286f !important;
+  border: none;
 }
-.inline-block p {
-  margin: 5px;
+.stylish-input-group .input-group-addon{
+  background: #23286f !important;
+  border: none;
 }
-.commit-text {
-  width: calc(100% - (50px + 10px));
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.stylish-input-group .form-control{
+  border-right:0;
+  box-shadow:0 0 0;
+  border-color:#ccc;
 }
-.commit-name {
-  font-size: 1em;
-  max-width: 90%;
+.stylish-input-group button{
+  border:0;
+  background:transparent;
 }
-.commit-text-bot {
-  overflow: auto;
-  font-size: 0.8em;
+.search-modal-content{
+  border-radius: 0;
+  margin-top: 20%;
+  border: none;
+  box-shadow: none;
 }
-.button-parent {
-  width: fit-content;
-  border: solid 2px #666666;
-  border-radius: 12px;
+.search-modal-field{
+  padding: 10px;
 }
-.border-button {
-  background: #bfbfbf;
-  width: fit-content;
-  padding: 5px;
-  border-radius: 12px;
-  border: solid 2px #ffffff;
-}
-.border-button button
+.search-modal-field image
 {
-  border-radius: 10px;
-  border: solid 1px #707070;
-  background: linear-gradient(to top, #b1b1b1, #e2e2e2);
-  box-shadow: #bfbfbf 1px 0px 5px;
+  width: 40px;
+  height: 40px;
 }
-.border-button button span {
-  color: #888888;
+.search-modal-field input
+{
+  width: 90%;
+  float: right;
+  border: none;
+  height: 40px;
+  outline: none;
+  font-size: 2.5em;
+  text-transform: uppercase;
 }
+.line-search-bot{
+  border-top: 1px solid #95989A;
+  width: 100%;
+}
+.line-search-bot::before, .line-search-bot::after {
+  content: '';
+  position: absolute;
+  left: 60px;
+  top: 40px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #95989A;
+}
+.line-search-bot::after {
+  border-bottom: 10px solid white;
+  top: 42px;
+}
+.search-result-content {
+  padding: 20px;
+}
+/*work watelo end*/
